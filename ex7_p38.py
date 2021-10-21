@@ -1,12 +1,22 @@
-s=["sora","casa","mama","andreea","tokyo","arenda","caciula","album"]
+S=str(input("Introduceti sirul S: "))
+print(S)
 #a)
-count=0
-for i in s:
-    for i in i:
-        if i=="a":
-            count=count+1
-print(count)
+a="A"
+print("a) Numarul de litera A=",S.count(a))
 #b)
-for i in s:
-    for i in i:
-            print(s.replaced("a","*"))
+b=S.replace("A","*")
+print("b)",b)
+#c)
+c=S.replace("B"," ")
+print("c)",c)
+#d)
+d="MA"
+print("d) Numarul de silabe MA",S.count(d))
+#e)
+e=S.replace("MA","TA")
+print("e)",e)
+#f)
+f=S.replace("TO"," ")   
+print("f)",f)
+#g)
+print("g)",S[::-1])
